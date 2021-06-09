@@ -5,7 +5,7 @@ const Header = () => {
         <div>
             <nav className="flex justify-between px-24 h-16 items-center">
                 <div>
-                    <h1 className="text-3xl">TailwidLOGO</h1>
+                    <h1 className="text-3xl font-bold text-red-700">Mehedy</h1>
                 </div>
                 <div >
                     <a className="text-xl px-4" href="#home">Home</a>

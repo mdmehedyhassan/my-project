@@ -1,14 +1,27 @@
+import { faFacebook, faGithub, faInstagram, faLinkedinIn, faTwitterSquare, faYoutube } from '@fortawesome/free-brands-svg-icons';
+import {  } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
-
+import Image from '../../images/image.gif'
 const Home = () => {
     return (
-        <div className="flex justify-between items-center">
-            <div className="pl-20">
-                <h1>Welcome to Tailwind CSS websitek</h1>
+        <div className="flex justify-between items-center mt-4">
+            <div className="pl-20 w-2/5 animate__animated animate__heartBeat">
+                <h1 className="text-4xl font-bold">Welcome to <span className="text-red-600">Mehedy</span> website</h1>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore eligendi assumenda voluptates atque reprehenderit consectetur eius dolorem cumque optio neque?</p>
+                <div className="mt-4">
+                    <button className="bg-red-600 px-2 m-1 py-2 text-white hover:bg-red-800 rounded-lg">Subscribe</button>
+                    <button className="bg-yellow-600 px-2 m-1 py-2 text-white hover:bg-yellow-800 rounded-lg">Connect with us!</button>
+                </div>
+                <a href="https://www.facebook.com/mehedysr"><FontAwesomeIcon className="m-1 hover:text-blue-600" icon={faFacebook} /></a>
+                <a href=""><FontAwesomeIcon className="m-1 hover:text-red-600" icon={faInstagram} /></a>
+                <a href=""><FontAwesomeIcon className="m-1 hover:text-red-600" icon={faYoutube} /></a>
+                <a href=""><FontAwesomeIcon className="m-1 hover:text-gray-500" icon={faGithub} /></a>
+                <a href=""><FontAwesomeIcon className="m-1 hover:text-blue-600" icon={faTwitterSquare} /></a>
+                <a href=""><FontAwesomeIcon className="m-1 hover:text-blue-600" icon={faLinkedinIn} /></a>
             </div>
-            <div>
-                <img src="https://cdn.dribbble.com/users/4415359/screenshots/12483759/media/8262513d57658cc7c053ba9c68024438.gif" alt="" />
+            <div className="w-3/5 animate__animated animate__jackInTheBox animate__delay-1s">
+                <img src={Image} alt="" />
             </div>
         </div>
     );
