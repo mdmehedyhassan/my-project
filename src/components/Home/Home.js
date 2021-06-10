@@ -6,7 +6,7 @@ import Image from '../../images/image.gif'
 const Home = () => {
     return (
         <div className="md:flex justify-between items-center mt-4">
-            <div className="pl-4 pr-4 md:w-2/5 animate__animated animate__heartBeat">
+            <div className="pl-4 pr-4 md:w-2/5 animate__animated animate__fadeInLeft">
                 <h1 className="text-4xl font-bold">Hello, <span className="text-red-600">I'm Mehedy</span></h1>
                 <p className="mt-4 text-justify">I am a Professional Web Developer. I can do HTML, CSS, JS React & others programming languages in professionally. I have learned web development since 2020. </p>
                 <div className="mt-4">
@@ -22,7 +22,7 @@ const Home = () => {
                     <a href="https://www.linkedin.com/in/md-mehedy-hassan/"><FontAwesomeIcon className="m-1 hover:text-blue-600" icon={faLinkedinIn} /></a>
                 </div>
             </div>
-            <div className="md:w-3/5 animate__animated animate__jackInTheBox animate__delay-1s">
+            <div className="md:w-3/5 animate__animated animate__fadeInRight">
                 <img src={Image} alt="" />
             </div>
         </div>
